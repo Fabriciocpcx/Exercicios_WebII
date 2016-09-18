@@ -1,0 +1,17 @@
+{
+  "name": "HTTP",
+  "authors": [
+    "Fabricio <fabricio_nathancpcx@hotmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

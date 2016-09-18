@@ -1,0 +1,12 @@
+1- Descreva os tipos de requisição e a função de cada um.
+
+GET - Requisita uma representação do recurso especificado.
+HEAD - Retorna os cabeçalhos de uma resposta.
+POST - Envia uma entidade e requisita que o servidor aceita-a como subordinada do recurso identificado pela URI.
+PUT - Requisita que uma entidade seja armazenada embaixo da URI fornecida.
+DELETE - Apaga o recurso especificado.
+TRACE - Ecoa de volta a requisição recebida para que o cliente houveram mudanças e adições feitas por servidores intermediários.
+OPTIONS - Retorna os métodos HTTP que o servidor suporta para a URL especificada.
+CONNECT - Converte a requisição de conexão para um tunel TCP/IP transparente.
+PATCH - Usado para aplicar modificações parciais a um recurso.
+
