@@ -10,4 +10,6 @@ module.exports = function (app) {
 
     app.route('/series/:')
         .get(controller.listaNomeSerie);
+
+        
 }

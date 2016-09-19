@@ -8,5 +8,8 @@
   },
   "author": "Fabricio",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express-load": "^1.1.15"
+  }
 }

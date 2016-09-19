@@ -17,6 +17,8 @@ module.exports = function () {
         res.json(series);
     }
 
+
+
     /**
      * funcao que lista a Serie pelo id 
      */
