@@ -30,7 +30,6 @@ module.exports = function () {
 
     }
 
-    app.get('/series/:id', controller.obtemSerie);
     controller.obtemSerie = function (req, res) { 
         var idSerie = req.params.id; 
         var serie = series.filter(function (serie) { 
@@ -40,4 +39,6 @@ module.exports = function () {
         res.json(serie) : 
         res.status(404).send('Serie não encontrada'); 
     };
+
+      return controller;
 };

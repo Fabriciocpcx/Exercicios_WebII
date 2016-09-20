@@ -1,14 +1,15 @@
 module.exports = function (app) {
     var controller = app.controllers.serie;
+    
 
     //organizacao das rotas
-    app.route('/series')
+    app.route('/api/series')
         .get(controller.listaSeries);
 
-    app.route('/series/:id')
+    app.route('/api/series/:id')
         .get(controller.listaSeriesId);
 
-    app.route('/series/:')
+    app.route('/api/series/:')
         .get(controller.listaNomeSerie);
 
         
