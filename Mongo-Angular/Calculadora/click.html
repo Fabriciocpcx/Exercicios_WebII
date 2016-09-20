@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+</head>
+
+<body ng-app="teste">
+    <div class="row text-center" ng-controller="clickOperacao as c">
+        <div>
+        <h1>Calculadora</h1>
+        </div>
+
+            <p></p>
+            <input type="number" ng-model="n1" name="" placeholder="digite um valor aqui">
+            <!-- ng-model passa valor para o controler -->
+            <input type="number" ng-model="n2" name="" placeholder="digite um valor aqui">
+            <p></p>
+            <button type="button" class="btn btn-default" ng-click="c.somar(n1, n2)">+</button>
+            <button type="button" class="btn btn-default" ng-click="c.subtrair(n1,n2)">-</button>
+            <button type="button" class="btn btn-default" ng-click="c.dividir(n1,n2)">/</button>
+            <button type="button" class="btn btn-default" ng-click="c.multiplicar(n1,n2)">*</button>
+
+            <p></p>
+            <!-- Declara controler c -->
+            {{c.cont}}
+
+
+    </div>
+
+    <script src="vendor/angular/angular.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/controller/clickController.js"></script>
+
+
+</body>
+
+</html>
