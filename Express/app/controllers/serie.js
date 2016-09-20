@@ -17,28 +17,29 @@ module.exports = function () {
         res.json(series);
     }
 
-
-
-    /**
-     * funcao que lista a Serie pelo id 
-     */
     controller.listaSeriesId = function (req, res) {
         return controller;
     }
 
-    controller.listaNomeSerie = function (req, res) {
-
+    controller.buscaPorNome = function (req, res) {
+        var nomeSerie = req.params.nome;
+        var serie = series.filter(function (serie) {
+            return serie.nome == nomeSerie;
+        })[0];
+        serie ?
+            res.json(serie) :
+            res.status(404).send('Serie não encontrada');
     }
 
-    controller.obtemSerie = function (req, res) { 
-        var idSerie = req.params.id; 
-        var serie = series.filter(function (serie) { 
-            return serie._id == idSerie; 
-        })[0]; 
-        serie ? 
-        res.json(serie) : 
-        res.status(404).send('Serie não encontrada'); 
+    controller.buscaPorId = function (req, res) {
+        var idSerie = req.params.id;
+        var serie = series.filter(function (serie) {
+            return serie._id == idSerie;
+        })[0];
+        serie ?
+            res.json(serie) :
+            res.status(404).send('Serie não encontrada');
     };
 
-      return controller;
+    return controller;
 };
