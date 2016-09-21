@@ -1,0 +1,29 @@
+ <div>
+     
+ </div>
+ <table class="table table-striped" ng-controller="seriesController">
+            <thead>
+                <tr>
+                    <td>
+                        <h1 class="fa fa-user"></h1>
+                        <a ng-click="sort('nome')">Nome</a>
+                    </td>
+                    <td>
+                        <h1 class="fa fa-envelope"></h1>
+                        <a ng-click="sort('categoria')">Categoria</a></td>
+                    <td>
+                        <h1 class="fa fa-phone"></h1>
+                        <a ng-click="sort('valor')">Valor</a></td>
+                </tr>
+            </thead>
+
+            <tbody class="table-striped">
+                <tr ng-repeat="serie in elementos | 
+                     orderBy:sortValue:order
+                     | filter: filtro">
+                    <td>{{serie.nome }}</td>
+                    <td>{{serie.categoria}}</td>
+                    <td>{{serie.valor}}</td>
+                </tr>
+            </tbody>
+        </table>
