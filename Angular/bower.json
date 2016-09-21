@@ -1,0 +1,21 @@
+{
+  "name": "series",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "Fabricio"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Fabriciocpcx/Exercicios_WebII",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "jquery": "^3.1.0"
+  }
+}
