@@ -1,4 +1,4 @@
-angular.module('series') contatos
+angular.module('series') 
   .controller('seriesController',
     function ($scope, $http) {
       $scope.total = 0;

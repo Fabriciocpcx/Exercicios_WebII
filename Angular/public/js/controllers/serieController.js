@@ -1,4 +1,4 @@
-angular.module('series') contato
+angular.module('series') 
   .controller('serieController',
     function ($scope, $http, $routeParams) {
       $scope.serie = {};
