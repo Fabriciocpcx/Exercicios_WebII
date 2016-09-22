@@ -29,11 +29,11 @@ angular.module('series')
             $http.post('/api/series', $scope.serie)
               .success(function () {
                 $scope.serie = {};
-                $scope.mensagem = 'Foto cadastrada com sucesso';
+                $scope.mensagem = 'Serie cadastrada com sucesso';
               })
               .error(function (erro) {
                 console.log(erro);
-                $scope.mensagem = 'Não foi possível cadastrar a foto';
+                $scope.mensagem = 'Não foi possível cadastrar a serie';
               });
           }
         }};
